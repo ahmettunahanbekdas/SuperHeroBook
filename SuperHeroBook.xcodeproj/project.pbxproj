@@ -12,6 +12,7 @@
 		0EE39C5A2A8264F4002718D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EE39C592A8264F4002718D1 /* Assets.xcassets */; };
 		0EE39C5D2A8264F4002718D1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EE39C5C2A8264F4002718D1 /* Preview Assets.xcassets */; };
 		0EE39C642A8266A8002718D1 /* SuperHero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE39C632A8266A8002718D1 /* SuperHero.swift */; };
+		0EE39C662A8284D9002718D1 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE39C652A8284D9002718D1 /* MapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		0EE39C592A8264F4002718D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0EE39C5C2A8264F4002718D1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0EE39C632A8266A8002718D1 /* SuperHero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHero.swift; sourceTree = "<group>"; };
+		0EE39C652A8284D9002718D1 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 				0EE39C552A8264F3002718D1 /* SuperHeroBookApp.swift */,
 				0EE39C572A8264F3002718D1 /* ContentView.swift */,
 				0EE39C632A8266A8002718D1 /* SuperHero.swift */,
+				0EE39C652A8284D9002718D1 /* MapView.swift */,
 				0EE39C592A8264F4002718D1 /* Assets.xcassets */,
 				0EE39C5B2A8264F4002718D1 /* Preview Content */,
 			);
@@ -141,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0EE39C582A8264F3002718D1 /* ContentView.swift in Sources */,
+				0EE39C662A8284D9002718D1 /* MapView.swift in Sources */,
 				0EE39C562A8264F3002718D1 /* SuperHeroBookApp.swift in Sources */,
 				0EE39C642A8266A8002718D1 /* SuperHero.swift in Sources */,
 			);
