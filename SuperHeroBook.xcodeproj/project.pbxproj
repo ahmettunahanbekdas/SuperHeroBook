@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0EC7D06B2A863D9F007EE74F /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC7D06A2A863D9F007EE74F /* DetailView.swift */; };
+		0EC7D06D2A8642AE007EE74F /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC7D06C2A8642AE007EE74F /* ImageView.swift */; };
 		0EE39C562A8264F3002718D1 /* SuperHeroBookApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE39C552A8264F3002718D1 /* SuperHeroBookApp.swift */; };
 		0EE39C582A8264F3002718D1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE39C572A8264F3002718D1 /* ContentView.swift */; };
 		0EE39C5A2A8264F4002718D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EE39C592A8264F4002718D1 /* Assets.xcassets */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0EC7D06A2A863D9F007EE74F /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		0EC7D06C2A8642AE007EE74F /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 		0EE39C522A8264F3002718D1 /* SuperHeroBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperHeroBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EE39C552A8264F3002718D1 /* SuperHeroBookApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHeroBookApp.swift; sourceTree = "<group>"; };
 		0EE39C572A8264F3002718D1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -56,11 +60,13 @@
 			isa = PBXGroup;
 			children = (
 				0EE39C552A8264F3002718D1 /* SuperHeroBookApp.swift */,
-				0EE39C572A8264F3002718D1 /* ContentView.swift */,
 				0EE39C632A8266A8002718D1 /* SuperHero.swift */,
+				0EE39C572A8264F3002718D1 /* ContentView.swift */,
 				0EE39C652A8284D9002718D1 /* MapView.swift */,
 				0EE39C592A8264F4002718D1 /* Assets.xcassets */,
 				0EE39C5B2A8264F4002718D1 /* Preview Content */,
+				0EC7D06A2A863D9F007EE74F /* DetailView.swift */,
+				0EC7D06C2A8642AE007EE74F /* ImageView.swift */,
 			);
 			path = SuperHeroBook;
 			sourceTree = "<group>";
@@ -143,9 +149,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EC7D06D2A8642AE007EE74F /* ImageView.swift in Sources */,
 				0EE39C582A8264F3002718D1 /* ContentView.swift in Sources */,
 				0EE39C662A8284D9002718D1 /* MapView.swift in Sources */,
 				0EE39C562A8264F3002718D1 /* SuperHeroBookApp.swift in Sources */,
+				0EC7D06B2A863D9F007EE74F /* DetailView.swift in Sources */,
 				0EE39C642A8266A8002718D1 /* SuperHero.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

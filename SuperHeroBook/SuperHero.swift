@@ -9,7 +9,7 @@ import Foundation
 
 import SwiftUI
 import CoreLocation
- 
+
 struct Superhero : Identifiable{
     var id = UUID()
     var name : String
@@ -37,7 +37,6 @@ let superman = Superhero(name: "Superman", realName: "Clark Kent", imageName: "s
 
 let ironMan = Superhero(name: "Iron Man", realName: "Tony Stark", imageName: "ironman", city: "Malibu", job: "Engineer", cordinate: Cordinate(latitude: 34.035374675003574, longitude: -118.6921683596528))
 
-
 let hulk = Superhero(name: "Hulk", realName: "Bruce Banner", imageName: "hulk", city: "New York", job: "Scientist", cordinate: Cordinate(latitude:40.72703794724936, longitude: -73.9989177642422))
 
 let aquaman = Superhero(name: "Aquaman", realName: "Arthur Curry", imageName: "aquaman", city: "Atlantis", job: "King of the Seas", cordinate: Cordinate(latitude: -27.250982858485166, longitude: -15.597790793084965))
@@ -45,7 +44,6 @@ let aquaman = Superhero(name: "Aquaman", realName: "Arthur Curry", imageName: "a
 let flash = Superhero(name: "Flash", realName: "Barry Allen", imageName: "flash", city: "Central City", job: "Forensic Scientist", cordinate: Cordinate(latitude: 39.800512640833894, longitude: -105.5147838963449))
 
 let captainAmerica = Superhero(name: "Captain America", realName: "Steve Rogers", imageName: "captainamerica", city: "New York", job: "Super Soldier", cordinate: Cordinate(latitude: 40.72703794724936, longitude: -73.9989177642422))
-
 
 let superHeroArray = [batman, spiderman, superman, ironMan, hulk, aquaman, flash, captainAmerica]
 
