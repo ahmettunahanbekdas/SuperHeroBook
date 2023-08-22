@@ -7,19 +7,16 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct  ListView: View {
     var body: some View {
         NavigationView {
             ZStack { // Tüm arka planı saran ZStack
-                Color.gray.edgesIgnoringSafeArea(.all) // Gri arka plan
-                
                 VStack {
-                    List(superHeroArray) { hero in
+                    List(superHeroArray) { superHero in
                         NavigationLink(destination: {
-                            // Hedef sayfaya yönlendirme
                         }, label: {
                             HStack {
-                                Image(hero.imageName)
+                                Image(superHero.imageName)
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
                                     .cornerRadius(60)
@@ -29,12 +26,12 @@ struct ContentView: View {
                                 Spacer()
                                 
                                 VStack(spacing: 10) {
-                                    Text(hero.name)
+                                    Text(superHero.name)
                                         .font(Font.custom("Arial", size:20))
                                         .frame(width: 180, height: 0, alignment: .center)
                                         .bold()
                                     
-                                    Text(hero.realName)
+                                    Text(superHero.realName)
                                         .font(Font.custom("Arial", size: 16))
                                         .frame(width: 150, height: 30, alignment: .center)
                                 }
@@ -51,8 +48,8 @@ struct ContentView: View {
 
 
 
-struct ContentView_Previews: PreviewProvider {
+struct ListView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+         ListView()
     }
 }

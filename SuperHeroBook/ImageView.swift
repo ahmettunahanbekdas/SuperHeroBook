@@ -8,17 +8,20 @@
 import SwiftUI
 
 struct ImageView: View {
+    var image: Image
+    
     var body: some View {
-        
-        Image("batman")
-            .resizable()
-            .aspectRatio( contentMode: .fit)
-            .frame(width: UIScreen.main.bounds.height * 0.30, height: UIScreen.main.bounds.width * 0.30)
+                image
+                   .resizable()
+                   .aspectRatio(contentMode: .fit) // Tam sığdır
+                   .clipShape(Circle()) // Yuvarlak yap
+                   .overlay(Circle().stroke(Color.blue, lineWidth: 4)) // Çerçeve ekle
+                   .shadow(radius: 15) // Gölge ekle
     }
 }
 
 struct ImageView_Previews: PreviewProvider {
     static var previews: some View {
-        ImageView()
+        ImageView(image: Image("batman"))
     }
 }
