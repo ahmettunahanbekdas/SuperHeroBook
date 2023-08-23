@@ -12,56 +12,78 @@ struct DetailView: View {
     var choiceHero: Superhero // choiceHero değişkeni SuperHerodan kalıtım aldı
     
     var body: some View {
-        VStack{
-            
-            MapView(coordinate: choiceHero.cordinateLocation)
-                .frame( height: UIScreen.main.bounds.height * 0.4)
-                .edgesIgnoringSafeArea(.top)
-            
-            
-            
-            ImageView(image: Image(choiceHero.imageName))
-                .offset(y: UIScreen.main.bounds.height * -0.23)
-                .frame(width: 250, height: 250)
-            
-            Spacer()
-            
+        NavigationView{
             VStack{
-                HStack{
-                    Text(choiceHero.name)
-                        .foregroundColor(.red)
-                    
-                    Spacer()
-                    
-                    Text(choiceHero.realName)
-                        .foregroundColor(.blue)
-                }
-                .font(.largeTitle)
                 
-                HStack{
-                    Text(choiceHero.job)
+                MapView(coordinate: choiceHero.cordinateLocation)
+                    .frame( height: UIScreen.main.bounds.height * 0.4)
+                    .edgesIgnoringSafeArea(.top)
+                
+                
+                
+                ImageView(image: Image(choiceHero.imageName))
+                    .offset(y: UIScreen.main.bounds.height * -0.20)
+                    .frame(width: 300, height: 300)
+                
+                Spacer()
+                
+                VStack{
+                    HStack{
+                        Text(choiceHero.name)
+                            .foregroundColor(.red)
+                        
+                        Spacer()
+                        
+                        Text(choiceHero.realName)
+                            .foregroundColor(.blue)
+                    }
+                    .font(.largeTitle)
                     
-                    Spacer()
+                    HStack{
+                        Text(choiceHero.job)
+                            .foregroundColor(.gray)
+
+                        
+                        Spacer()
+                        
+                        Text(choiceHero.city)
+                            .foregroundColor(.gray)
+
+                    }
+                    .font(.title2)
                     
-                    Text(choiceHero.city)
+                    
+                    
                 }
-                .font(.title2)
+                .padding()
+                .offset(y: UIScreen.main.bounds.height * -0.29)
+                Spacer()
+                
+                VStack{
+                    Text(choiceHero.info)
+                        .multilineTextAlignment(.center) // Metni altsatıra hizalama
+                        .offset(y:UIScreen.main.bounds.height * -0.25)
+                        .font(.system(size: 15)) // Yazı boyutunu ayarlama
+
+                        
+                        
+                }
+                .frame(width: 350,height:UIScreen.main.bounds.height / 3)
                 
 
             }
-            .padding()
-            .offset(y: UIScreen.main.bounds.height * -0.33)
+            
+
             
             
-            
-            
-        }
+            }
         
     }
-    
-    struct DetailView_Previews: PreviewProvider {
-        static var previews: some View {
-            DetailView(choiceHero: spiderman  )
-        }
+}
+
+struct DetailView_Previews: PreviewProvider {
+    static var previews: some View {
+        DetailView(choiceHero: flash)
     }
 }
+
