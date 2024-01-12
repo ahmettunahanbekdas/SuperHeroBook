@@ -1,7 +1,7 @@
 
 # Super Hero Book App
 
-**SuperHeroBook** is a simple superhero guide application developed using SwiftUI. With this app, you can view information about popular superheroes, including their names, real names, cities, and more.
+SuperHeroBook** is a simple superhero guide application developed using SwiftUI. With this app, you can view information about popular superheroes, including their names, real names, cities, and more.
   
 ## Features
 
