@@ -5,7 +5,7 @@ SuperHeroBook** is a simple superhero guide application developed using SwiftUI.
   
 # Features
 
-- ***SwiftUI:** SwiftUI is a declarative framework used across Apple platforms. It allows developers to create interactive and visually appealing applications with less code.
+- **SwiftUI:** SwiftUI is a declarative framework used across Apple platforms. It allows developers to create interactive and visually appealing applications with less code.
 - **MapKit:** MapKit is a framework provided by Apple that offers mapping and location services. It provides developers with capabilities to display maps, add annotations, and create location-based applications.
 
 # Screen Recording
